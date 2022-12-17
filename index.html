@@ -1,0 +1,236 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>
+            Clothing Store
+        </title>
+
+        <link rel="stylesheet" href="sheet.css">
+
+        <script src="https://kit.fontawesome.com/006ee95f01.js" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="row">
+            <input type="checkbox" class="bars" id="sidebar">
+            <div class="left-column">
+                <h2 class="logo">
+                    LOGO
+                </h2>
+
+                <nav class="nav">
+                    <a class="item">
+                        Shirts
+                    </a>
+                    <a class="item">
+                        Dresses
+                    </a>
+
+                    <label for="checkbox">
+                        <a class="item">
+                            Jeans
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </label>
+                    
+                    <input type="checkbox" checked="checked" class="dropdown" id="checkbox">
+                    <div class="dropdown-content">
+                        <a class="item">
+                            &emsp;Skinny
+                        </a>
+                        <a class="item">
+                            &emsp;Relaxed
+                        </a>
+                        <a class="item">
+                            &emsp;Bootcut
+                        </a>
+                        <a class="item">
+                            &emsp;Straight
+                        </a>
+                    </div>
+
+                    <a class="item">
+                        Jackets
+                    </a>
+                    <a class="item">
+                        Gymwear
+                    </a>
+                    <a class="item">
+                        Blazers
+                    </a>
+                    <a class="item">
+                        Shoes
+                    </a>
+                    <br>
+                    <br>
+                    <div style="font-size: smaller;">
+                    <a class="item">
+                        Contact
+                    </a>
+                    <a class="item">
+                        Newsletter
+                    </a>
+                    <a class="item">
+                        Subscribe
+                    </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="right-column">
+
+                <header class="mobile-header">
+                    <h1 style="float: left;">LOGO</h1>
+
+                    <p style="float: right;">
+                        <label for="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                    </p>
+                </header>
+
+                <header class="header">
+                    <h3 style="float: left;">Jeans</h3>
+
+                    <p style="float: right;">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-shop"></i>
+                    </p>
+                </header>
+                
+                <div style="position: relative; display: block;">
+                    <img class="bigpic" src="./pics/bigpic.jpg" alt="bigpic">
+                    <div class="bigpic-top-left">
+                        <h1>New arrivals</h1>
+                        <h2>Collection 2016</h2>
+                        <input class="send" type="submit" value="SHOP NOW">
+                    </div>
+                </div>
+
+                <p class="gallery-counter">8 items</p>
+
+
+                <div class="collection">
+                    <div class="gallery">
+                        <img src="./pics/pic1.jpg" alt="pic1">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic2.jpg" alt="pic2">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic3.jpg" alt="pic3">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic4.jpg" alt="pic4">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic5.jpg" alt="pic5">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic6.jpg" alt="pic6">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic7.jpg" alt="pic7">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                    <div class="gallery">
+                        <img src="./pics/pic8.jpg" alt="pic8">
+                        <p>
+                            Ripped Felan
+                            <br>
+                            <b>$24.99</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form action="/action_page.php">
+                        <h2 style="color: white;">
+                            Subscribe
+                        </h2>
+
+                        <label for="email">To get special offers and VIP treatment:</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Enter Email">
+                    
+                        <input class="subscribe" type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <footer>
+                    <div class="footer-column" style="text-align: center;">
+                        <h3>Contact</h3>
+                        <p>Questions? Go ahead.</p>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <input type="text" placeholder="Message">
+                        <input class="send" type="submit" value="Send">
+                    </div>
+
+                    <div class="footer-column" style="text-align: center;">
+                        <h3>About</h3>
+                        <a class="about-link">About us</a>
+                        <a class="about-link">We're hiring</a>
+                        <a class="about-link">Support</a>
+                        <a class="about-link">Find Store</a>
+                        <a class="about-link">Shipment</a>
+                        <a class="about-link">Payment</a>
+                        <a class="about-link">Gift Card</a>
+                        <a class="about-link">Return</a>
+                        <a class="about-link">Help</a>
+                    </div>
+
+                    <div class="footer-column" style="text-align: left;">
+                        <h3>Store</h3>
+                        <p><i class="fa fa-fw fa-map-marker"></i>Company Name</p>
+                        <p><i class="fa fa-fw fa-phone"></i>0044556677</p>
+                        <p><i class="fa fa-fw fa-envelope"></i>ex@ex.com</p>
+                        <p>We accept</p>
+                        <p><i class="fa fa-fw fa-cc-amex"></i>Amex</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i>Credit Card</p>
+                        <br>
+                        <p><i class="fa fa-fw fa-facebook-official"></i><i class="fa fa-fw fa-instagram"></i><i class="fa fa-fw fa-snapchat"></i><i class="fa fa-fw fa-pinterest-p"></i><i class="fa fa-fw fa-twitter"></i><i class="fa fa-fw fa-linkedin "></i></p>
+                    </div>
+
+                </footer>
+                <p class="last-part">Powered by <a href="https://ir.linkedin.com/in/taha-elmi-87a3a3218" style="color: white;">Taha</a></p>
+            </div>
+        </div>
+    </body>
+</html>

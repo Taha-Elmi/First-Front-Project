@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.left-column {
+    width: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    float: left;
+    padding-right: 10px;
+}
+
+.right-column {
+    max-width: 950px;
+    overflow: auto;
+    float: left;
+    margin-left: 250px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.nav {
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    overflow: auto;
+}
+
+.item {
+    padding: 8px 16px;
+    float: left;
+    width: 250px;
+    border: none;
+    display: block;
+    outline: 0;
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    position: relative;
+}
+
+.item:hover {
+    background-color: darkgrey;
+}
+
+.header {
+    font-size: 24px;
+    display: block;
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    padding: 8px 16px;
+}
+
+.bigpic {
+    width: 100%;
+    height: auto;
+    padding-right: 16px;
+}
+
+.bigpic-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    display: block;
+}
+
+.gallery-counter {
+    color: #aaa;
+}
+
+div.collection {
+    display: block;
+}
+
+div.gallery {
+    /* margin: 5px; */
+    padding: 0.01em 16px 0.01em 0;
+    float: left;
+    width: 25%;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+input[type=submit].subscribe {
+    width: 100px;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit].subscribe:hover {
+    background-color: gray;
+    color: black;
+}
+  
+.form {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.footer-column {
+    width: 33.33333%;
+    float: left;
+    display: block;
+}
+
+input[type=submit].send {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit].send:hover {
+    background-color: gray;
+    color: black;
+}
+
+.about-link {
+    display: block;
+    margin: 10px;
+}
+
+.last-part {
+    width: 100%;
+    padding: 25px 0;
+    background-color: black;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown-content {
+    display: none !important;
+}
+
+.dropdown:checked + .dropdown-content {
+    display: block !important;
+}
+
+.bars {
+    display: none;
+}
+
+.bars:checked + .left-column {
+    display: block !important;
+    z-index: 1 !important;
+    background-color: white;
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .collection, .bigpic, .header, .gallery-counter {
+        padding-left: 10px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    div.gallery {
+        width: 50%;
+    }
+
+    .mobile-header {
+        display: block !important;
+    }
+}
+
+.mobile-header {
+    margin: 0;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    height: 85px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.mobile-header > h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
